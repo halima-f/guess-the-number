@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 Guess the Number 🎮</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>🎯 Guess the Number Game 🎯</h1>
+    <p>I'm thinking of a number between <strong>1</strong> and <strong>100</strong>.</p>
+
+    <div class="input-area">
+      <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+      <button onclick="checkGuess()">Guess</button>
+    </div>
+
+    <div id="message-area"></div>
+
+    <p>Attempts: <span id="attempts">0</span></p>
+
+    <button id="play-again" class="hidden" onclick="startNewGame()">Play Again</button>
+  </div>
+
+  <script src="index.js"></script>
+           
+
+</body>
+</html>
